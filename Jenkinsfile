@@ -4,7 +4,7 @@ pipeline {
     stages {
         stage('Clone Repo') {
             steps {
-                git 'https://github.com/Govindshivhare/ci_cd_with_jen.git'
+                git branch: 'main', url: 'https://github.com/Govindshivhare/ci_cd_with_jen.git'
             }
         }
 
